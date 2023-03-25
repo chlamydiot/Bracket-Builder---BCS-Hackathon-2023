@@ -40,3 +40,46 @@ flex-grow: 1;
 align-items: stretch;
 height: 100%;
 }
+
+.CreatePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.CreatePanel button {
+  padding: 32px 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-style: italic;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.CreatePanel button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.PresetPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:20%;
+  padding-right:20%;
+  padding-bottom: 25%;
+}
+
+.PresetPanel button {
+  margin-bottom: 5%;
+  padding: 32px 16px;
+  border-radius: 8px;
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  background-color: transparent;
+  font-style: italic;
+}
+
+.PresetPanel button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
