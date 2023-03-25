@@ -1,6 +1,6 @@
 function TopPanel() {
     return <div className="TopPanel">
-            top
+            <img src="Brakcet-Builder.png" alt="Bracket Builder"></img>
             </div>
     }
     
