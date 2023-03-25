@@ -1,21 +1,27 @@
 import { useState } from "react"
 
-function LeftPanel() {
+function LeftPanel({setCustomList, changePreset}) {
   const [name, setName] = useState('')
   const [textArea, setTextArea] = useState('')
 
-  const generateBracket = () => {
-    console.log("Bracket would be generated here.");
+  const generateCustomBracket = (event) => {
+    event.preventDefault()
+    setCustomList(textArea.split(/\r?\n/))
+    changePreset(5)
   }
 
     return <div className="LeftPanel">
-      <h1>Enter form details here:</h1>
+      <h1>Create a custom bracket:</h1>
       <div className="FormContainer">
-        <form onSubmit={generateBracket}>
-          <div className="InputBox">
+        <form onSubmit={generateCustomBracket}>
+          <div>
             <label>
               Name:
-              <input type="text" value={name} onChange={({target}) => setName(target.value)}></input>
+              <input 
+                type="text" 
+                value={name} 
+                onChange={({target}) => setName(target.value)}>
+              </input>
             </label>
           </div>
           <div className="InputBox">
@@ -23,11 +29,12 @@ function LeftPanel() {
               Input teams:
               <textarea 
                 value={textArea} 
-                onChange={({target}) => setTextArea(target.value)
-                }>
-                Separate teams by newlines
+                onChange={({target}) => setTextArea(target.value)}
+                placeholder='Enter 8 inputs separated by new lines'>
               </textarea>
             </label>
+
+          <button type="submit">Submit</button>
           </div>
         </form>
       </div>

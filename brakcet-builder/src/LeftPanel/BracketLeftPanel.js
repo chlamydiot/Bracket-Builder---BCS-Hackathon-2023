@@ -1,6 +1,12 @@
 import { useState } from "react"
 import { Bracket, RoundProps } from 'react-brackets';
 
+let r = 1;
+var round1;
+var round2;
+var round3;
+var winner;
+
 const rounds = [
   {
     title: 'Round one',
@@ -90,7 +96,10 @@ const rounds = [
 ];
 
 function BracketLeftPanel({input}) {
-
+  var currentRound = input;
+  var nextRound = [];
+  let r = 0;
+  var j = 0;
   
   const generateBracket = (input) => {
     for (let i = 0; i < 8; i += 2) {
@@ -99,12 +108,20 @@ function BracketLeftPanel({input}) {
     }
     console.log("Bracket would be generated here.");
   }
+
+  const updateBracket = (currentRound, j) => {
+    rounds[1]["seeds"][r]["teams"][j%2]["name"] = currentRound[j];
+  }
+
   generateBracket(input);
 
     return <div className="LeftPanel">
       <h1>SONGS PANEL</h1>
       <Bracket rounds={rounds} />
+      <button onClick={() => updateBracket(currentRound, j)}>{currentRound[j]}</button>
+      <button onClick={() => updateBracket(currentRound, j+1)}>{currentRound[j+1]}</button>
     </div>
+
 }
 
 export default BracketLeftPanel;
