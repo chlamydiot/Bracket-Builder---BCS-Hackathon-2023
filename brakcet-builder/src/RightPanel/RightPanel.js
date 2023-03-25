@@ -1,13 +1,9 @@
 
 
 function RightPanel({changePreset}) {
-  const setSongsBracket = () => {
-    // setPreset(1)
-  }
-
 return <div className="RightPanel">
          <div className='CreatePanel'> 
-            <button onclick="">
+            <button onClick={() => changePreset(0)}>
                Create New Bracket
             </button>
          </div>

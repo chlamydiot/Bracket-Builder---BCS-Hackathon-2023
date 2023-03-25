@@ -1,12 +1,12 @@
 import RightPanel from '../RightPanel/RightPanel';
 import LeftPanel from '../LeftPanel/LeftPanel';
-import BracketRightPanel from '../RightPanel/BracketRightPanel'
 import BracketLeftPanel from '../LeftPanel/BracketLeftPanel'
 import TopPanel from './TopPanel';
 import { useState } from 'react'
 
 function MainPanels() {
     const [preset, setPreset] = useState(0)
+    const [customList, setCustomList] = useState([])
     const topSongs2022 = ["Heat Waves - Glass Animals",
   "As It Was - Harry Styles",
   "Stay - Justin Bieber",
@@ -51,7 +51,7 @@ function MainPanels() {
   if (preset === 0) {
     console.log("Preset 0 block executed")
     pageContent = <> 
-      <LeftPanel />
+      <LeftPanel setCustomList={setCustomList} changePreset={setPreset}/>
     </>
   } else if (preset === 1) {
     console.log("Preset 1 block executed")
@@ -73,8 +73,12 @@ function MainPanels() {
     pageContent = <>
       <BracketLeftPanel input={topSongs2022} />
     </>
+  } else if (preset === 5) {
+    console.log("Custom preset executed")
+    pageContent = <>
+      <BracketLeftPanel input={customList} />
+    </>
   }
-
   return (
     <div className='App'>
       <TopPanel></TopPanel>
