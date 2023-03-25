@@ -12,13 +12,13 @@ function LeftPanel() {
       <h1>Enter form details here:</h1>
       <div className="FormContainer">
         <form onSubmit={generateBracket}>
-          <div>
+          <div className="InputBox">
             <label>
               Name:
               <input type="text" value={name} onChange={({target}) => setName(target.value)}></input>
             </label>
           </div>
-          <div>
+          <div className="InputBox">
             <label>
               Input teams:
               <textarea 
