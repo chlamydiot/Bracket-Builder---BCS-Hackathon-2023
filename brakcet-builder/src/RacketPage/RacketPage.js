@@ -1,6 +1,6 @@
-import RightPanel from '../RightPanel/BrackRightPanel';
+import RightPanel from '../RightPanel/BracketRightPanel';
 import LeftPanel from '../LeftPanel/BracketLeftPanel';
-import TopPanel from './BracketTopPanel';
+import TopPanel from '../MainPanels/TopPanel';
 
 function MainPanels() {
     return <div className="App">
