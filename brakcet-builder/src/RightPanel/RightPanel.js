@@ -1,8 +1,8 @@
 // import RightPanelButtonFunc from "./RightPanelButtonFunc";
 
-function RightPanel({setPreset}) {
+function RightPanel({changePreset}) {
   const setSongsBracket = () => {
-    setPreset(1)
+    // setPreset(1)
   }
 
 return <div className="RightPanel">
@@ -13,13 +13,13 @@ return <div className="RightPanel">
          </div>
          <div className='PresetPanel'>
             <p> Preset Panels </p>
-            <button onclick={setSongsBracket}>
+            <button onClick={() => changePreset(1)}>
                Top Songs of 2020
             </button>
-            <button onclick="">
+            <button onClick={() => changePreset(2)}>
                Preset Bracket 2
             </button>
-            <button onclick="">
+            <button onClick="">
                Preset Bracket 3
             </button>
             <button onclick="">
