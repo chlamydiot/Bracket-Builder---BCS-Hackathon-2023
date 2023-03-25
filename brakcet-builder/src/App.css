@@ -4,38 +4,45 @@
   bottom: 0;
   left: 0;
   right: 0;
+  color: white;
 }
 
 .MainPanels {
 display: flex;
 align-items: stretch;
 height: 100%;
+background-image: url("showdownhighcontrast.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-color: rgb(71, 71, 71);
+background-blend-mode: multiply;
 }
 
 .TopPanel {
-border: 1px solid orange;
+
 height: 10%;
 }
 
 .RightPanel {
-border: 1px solid red;
-width: 30%;
+
+width: 25%;
+flex-shrink: 0;
 align-items: stretch;
 height: 90%;
+background-color: rgba(153, 153, 153, 0.089);
 }
 
 .CreatePanel {
-border: 1px solid green;
+
 height: 30%;
 }
 
 .PresetPanel {
-  border: 1px solid blue;
+
   height: 70%;
 }
 
 .LeftPanel {
-border: 2px solid blue;
 flex-grow: 1;
 align-items: stretch;
 height: 100%;
@@ -47,19 +54,23 @@ height: 100%;
   justify-content: center;
   padding-left: 20%;
   padding-right: 20%;
+  color: white;
 }
 
 .CreatePanel button {
-  padding: 32px 16px;
+  padding: 16px 8px;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: rgba(153, 153, 153, 0.089);
   font-style: italic;
+  font-family: 'murro', sans-serif;
+                                                
   font-size: x-large;
   font-weight: bold;
+  color: white;
 }
 
 .CreatePanel button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 253, 253, 0.19);
 }
 
 .PresetPanel {
@@ -69,23 +80,34 @@ height: 100%;
   padding-left:20%;
   padding-right:20%;
   padding-bottom: 25%;
+  background-color: rgba(153, 153, 153, 0.089);
+  color: white;
+  font-family: 'murro', sans-serif;
 }
 
 .PresetPanel button {
   margin-bottom: 5%;
-  padding: 32px 16px;
+  padding: 16px 8px;
   border-radius: 8px;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-  background-color: transparent;
+  background-color: rgba(110, 103, 103, 0.089);
   font-style: italic;
+  color: white;
+  font-family: 'murro', sans-serif;
 }
 
 .PresetPanel button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
 }
 
 .PresetTitle {
   font-size: x-large;
   font-style: italic;
   font-weight: bold;
+  font-family: 'murro', sans-serif;                                           
+}
+
+.sc-eDDNvR {
+  background-color: #9392e781 !important;
+  color: #ffffff !important;
 }
