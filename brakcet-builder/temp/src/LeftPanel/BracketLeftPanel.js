@@ -77,6 +77,8 @@ function BracketLeftPanel({input}) {
 
 
   var currentRound = input;
+  var nextRound = [];
+  let r = 0;
   var j = 0;
   
   const generateBracket = (input) => {
@@ -110,8 +112,8 @@ function BracketLeftPanel({input}) {
     return <div className="LeftPanel">
       <h1>SONGS PANEL</h1>
       <Bracket rounds={round} />
-      <button onClick={() => updateBracket(input, 0)}>{currentRound[j]}</button>
-      <button onClick={() => updateBracket(input, 1)}>{currentRound[j+1]}</button>
+      <button onClick={() => updateBracket(currentRound, 0)}>{currentRound[j]}</button>
+      <button onClick={() => updateBracket(currentRound, 1)}>{currentRound[j+1]}</button>
     </div>
 
 }

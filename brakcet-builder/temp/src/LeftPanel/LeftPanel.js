@@ -14,7 +14,17 @@ function LeftPanel({setCustomList, changePreset}) {
       <h1>Create a custom bracket:</h1>
       <div className="FormContainer">
         <form onSubmit={generateCustomBracket}>
-          <div className="InputBox">
+          <div>
+            <label>
+              Name:
+              <input 
+                type="text" 
+                value={name} 
+                onChange={({target}) => setName(target.value)}>
+              </input>
+            </label>
+          </div>
+          <div>
             <label>
               Input teams:
               <textarea 
