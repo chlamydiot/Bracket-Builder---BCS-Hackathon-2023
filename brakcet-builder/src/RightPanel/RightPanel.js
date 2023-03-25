@@ -1,5 +1,4 @@
 
-import MainPanels from "../RacketPage/RacketPage";
 
 function RightPanel({changePreset}) {
   const setSongsBracket = () => {

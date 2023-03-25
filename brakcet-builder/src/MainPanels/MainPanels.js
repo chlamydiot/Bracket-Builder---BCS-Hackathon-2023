@@ -52,61 +52,38 @@ function MainPanels() {
     console.log("Preset 0 block executed")
     pageContent = <> 
       <LeftPanel />
-      <RightPanel changePreset={setPreset} />
     </>
   } else if (preset === 1) {
     console.log("Preset 1 block executed")
     pageContent = <>
       <BracketLeftPanel input={topSongs2019} />
-      <BracketRightPanel />
     </>
   } else if (preset === 2) {
     console.log("Preset 2 block executed")
     pageContent = <>
       <BracketLeftPanel input={topSongs2020} />
-      <BracketRightPanel />
     </>
   } else if (preset === 3) {
     console.log("Preset 3 block executed")
     pageContent = <>
       <BracketLeftPanel input={topSongs2021} />
-      <BracketRightPanel />
     </>
   } else if (preset === 4) {
     console.log("Preset 4 block executed")
     pageContent = <>
       <BracketLeftPanel input={topSongs2022} />
-      <BracketRightPanel />
     </>
   }
 
   return (
     <div className='App'>
       <TopPanel></TopPanel>
-      <div className='MainPanels'>{pageContent}</div>
+      <div className='MainPanels'>
+        {pageContent}
+        <RightPanel changePreset={setPreset} />
+      </div>
     </div>
   )
-
-      // if (preset == 0) {
-      //   return (
-      //     <div>
-      //     <TopPanel></TopPanel>
-      //     <div className='MainPanels'> 
-      //       <LeftPanel />
-      //       <RightPanel changePreset={setPreset} />
-      //     </div>
-      //   </div>
-      //   )
-      // }
-      // else if (preset == 1) {
-      //   return (
-      //   <div>
-      //       <TopPanel />
-      //       <BracketLeftPanel input={topSongs2022} />
-      //       <BracketRightPanel />
-      //   </div>
-      //   )
-      // }
 }
 
 export default MainPanels;
