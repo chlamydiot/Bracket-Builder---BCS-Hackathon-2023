@@ -1,4 +1,4 @@
-function RightPanel() {
+function BracketRightPanel() {
 return <div className="RightPanel">
          <div className='CreatePanel'> 
             <button>
@@ -22,4 +22,4 @@ return <div className="RightPanel">
         </div>
 }
 
-export default RightPanel;
+export default BracketRightPanel;

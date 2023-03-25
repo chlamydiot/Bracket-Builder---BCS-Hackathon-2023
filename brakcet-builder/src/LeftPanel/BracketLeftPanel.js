@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function LeftPanel() {
+function LeftPanel({input}) {
   const [name, setName] = useState('')
   const [textArea, setTextArea] = useState('')
 
