@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Presets from './presets';
+import RightPanel from './RightPanel/RightPanel';
+import LeftPanel from './LeftPanel/LeftPanel';
+import TopPanel from './MainPanels/TopPanel';
+import MainPanels from './MainPanels/MainPanels';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <MainPanels></MainPanels>
   );
 }
 
