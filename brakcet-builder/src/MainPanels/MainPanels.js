@@ -29,8 +29,7 @@ function MainPanels() {
     "Good 4 U - Olivia Rodrigo",
     "Kiss Me More - Doja Cat",
     "Leave the Door Open - Silk Sonic",
-    "Drivers License - Olivia Rodrigo"
-    ]
+    "Drivers License - Olivia Rodrigo"]
     const topSongs2020 = ["Circles - Post Malone",
     "The Box - Roddy Ricch",
     "Don't Start Now - Dua Lipa",
@@ -38,8 +37,7 @@ function MainPanels() {
     "Adore You - Harry Styles",
     "Life is Good - Future",
     "Memories - Maroon 5",
-    "The Bones - Maren Morris"
-  ]
+    "The Bones - Maren Morris"]
     const topSongs2019 = ["Old Town Road - Lil Nas X",
   "Sunflower - Post Malone",
   "Without Me - Halsey",
@@ -47,8 +45,7 @@ function MainPanels() {
   "Wow - Post Malone",
   "Happier - Marshmello",
   "7 Rings - Ariana Grande",
-  "Talk - Khalid",
-  ]
+  "Talk - Khalid",]
 
   let pageContent = null;
   if (preset === 0) {

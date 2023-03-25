@@ -23,7 +23,7 @@ return <div className="RightPanel">
             <button onClick={() => changePreset(3)}>
                Top Songs of 2021
             </button>
-            <button onclick={() => changePreset(4)}>
+            <button onClick={() => changePreset(4)}>
                Top Songs of 2022
             </button>
          </div>
