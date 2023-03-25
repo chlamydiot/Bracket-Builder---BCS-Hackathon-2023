@@ -1,21 +1,24 @@
+// import RightPanelButtonFunc from "./RightPanelButtonFunc";
+
 function RightPanel() {
 return <div className="RightPanel">
          <div className='CreatePanel'> 
-            <button>
+            <button onclick="">
                Create New Bracket
             </button>
          </div>
          <div className='PresetPanel'>
-            <button>
+            <p> Preset Panels </p>
+            <button onclick="">
                Top Songs of 2020
             </button>
-            <button>
+            <button onclick="">
                Preset Bracket 2
             </button>
-            <button>
+            <button onclick="">
                Preset Bracket 3
             </button>
-            <button>
+            <button onclick="">
                Preset Bracket 4
             </button>
          </div>
