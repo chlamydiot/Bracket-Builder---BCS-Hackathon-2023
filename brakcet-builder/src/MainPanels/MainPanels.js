@@ -84,27 +84,6 @@ function MainPanels() {
       </div>
     </div>
   )
-
-      // if (preset == 0) {
-      //   return (
-      //     <div>
-      //     <TopPanel></TopPanel>
-      //     <div className='MainPanels'> 
-      //       <LeftPanel />
-      //       <RightPanel changePreset={setPreset} />
-      //     </div>
-      //   </div>
-      //   )
-      // }
-      // else if (preset == 1) {
-      //   return (
-      //   <div>
-      //       <TopPanel />
-      //       <BracketLeftPanel input={topSongs2022} />
-      //       <BracketRightPanel />
-      //   </div>
-      //   )
-      // }
 }
 
 export default MainPanels;
