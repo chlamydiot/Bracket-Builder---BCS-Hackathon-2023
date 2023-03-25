@@ -40,3 +40,8 @@ flex-grow: 1;
 align-items: stretch;
 height: 100%;
 }
+
+.PresetPanel {
+  display: flex;
+  flex-direction: column;
+}
