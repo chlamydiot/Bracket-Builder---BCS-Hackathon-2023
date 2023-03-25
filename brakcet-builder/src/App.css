@@ -53,6 +53,12 @@ font-family: 'murro', sans-serif;
 text-align: center;
 }
 
+.LeftPanel button {
+  background-color: rgba(153, 153, 153, 0.089);
+  font-family: 'murro', sans-serif;
+  color: white;
+}
+
 .CreatePanel {
   display: flex;
   flex-direction: column;
@@ -66,7 +72,7 @@ text-align: center;
 .CreatePanel button {
   padding: 16px 8px;
   border-radius: 8px;
-  background-color: rgba(153, 153, 153, 0.089);
+  background-color: #aaa8ee81;
   font-style: italic;
   font-family: 'murro', sans-serif;
                                                 
@@ -101,6 +107,7 @@ text-align: center;
   background-color: rgba(153, 153, 153, 0.089);
   color: white;
   font-size: 25px;
+  font-style: italic;
   font-family: 'murro', sans-serif;
 }
 
@@ -109,7 +116,7 @@ text-align: center;
   padding: 16px 8px;
   border-radius: 8px;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-  background-color: rgba(110, 103, 103, 0.089);
+  background-color: #aaa8ee81;
   font-style: italic;
   color: white;
   font-family: 'murro', sans-serif;
@@ -127,6 +134,6 @@ text-align: center;
 }
 
 .sc-eDDNvR {
-  background-color: #9392e781 !important;
+  background-color: #aaa8ee81 !important;
   color: #ffffff !important;
 }

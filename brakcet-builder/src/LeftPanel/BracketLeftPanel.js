@@ -68,31 +68,6 @@ const initialRounds = [
       },
     ],
   },
-  {
-    title: 'Round two',
-    seeds: [
-      {
-        id: 5,
-        date: new Date().toDateString(),
-        teams: [{ name: 'Team A' }, { name: 'Team C' }],
-      },
-      {
-        id: 6,
-        date: new Date().toDateString(),
-        teams: [{ name: 'Team D' }, { name: 'Team E' }],
-      }
-    ],
-  },
-  {
-    title: 'Round three',
-    seeds: [
-      {
-        id: 7,
-        date: new Date().toDateString(),
-        teams: [{ name: 'Team A' }, { name: 'Team D' }],
-      }
-    ],
-  }
 ];
 
 function BracketLeftPanel({input}) {
