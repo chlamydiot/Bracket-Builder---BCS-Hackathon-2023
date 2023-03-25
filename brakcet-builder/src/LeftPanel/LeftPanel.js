@@ -23,7 +23,7 @@ function LeftPanel() {
               Input teams:
               <textarea 
                 value={textArea} 
-                onChange={({target}) => setName(target.value)
+                onChange={({target}) => setTextArea(target.value)
                 }>
                 Separate teams by newlines
               </textarea>
