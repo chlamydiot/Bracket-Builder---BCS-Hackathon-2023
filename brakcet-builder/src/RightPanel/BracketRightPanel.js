@@ -7,16 +7,16 @@ return <div className="RightPanel">
          </div>
          <div className='PresetPanel'>
             <button>
+               Top Songs of 2019
+            </button>
+            <button>
                Top Songs of 2020
             </button>
             <button>
-               Preset Bracket 2
+               Top Songs of 2021
             </button>
             <button>
-               Preset Bracket 3
-            </button>
-            <button>
-               Preset Bracket 4
+               Top Songs of 2022
             </button>
          </div>
         </div>

@@ -40,6 +40,15 @@ function MainPanels() {
     "Memories - Maroon 5",
     "The Bones - Maren Morris"
   ]
+    const topSongs2019 = ["Old Town Road - Lil Nas X",
+  "Sunflower - Post Malone",
+  "Without Me - Halsey",
+  "Bad Guy - Billie Eilish",
+  "Wow - Post Malone",
+  "Happier - Marshmello",
+  "7 Rings - Ariana Grande",
+  "Talk - Khalid",
+  ]
 
   let pageContent = null;
   if (preset === 0) {
@@ -51,19 +60,25 @@ function MainPanels() {
   } else if (preset === 1) {
     console.log("Preset 1 block executed")
     pageContent = <>
-      <BracketLeftPanel input={topSongs2022} />
+      <BracketLeftPanel input={topSongs2019} />
       <BracketRightPanel />
     </>
   } else if (preset === 2) {
     console.log("Preset 2 block executed")
     pageContent = <>
-      <BracketLeftPanel input={topSongs2021} />
+      <BracketLeftPanel input={topSongs2020} />
       <BracketRightPanel />
     </>
   } else if (preset === 3) {
     console.log("Preset 3 block executed")
     pageContent = <>
-      <BracketLeftPanel input={topSongs2020} />
+      <BracketLeftPanel input={topSongs2021} />
+      <BracketRightPanel />
+    </>
+  } else if (preset === 4) {
+    console.log("Preset 4 block executed")
+    pageContent = <>
+      <BracketLeftPanel input={topSongs2022} />
       <BracketRightPanel />
     </>
   }

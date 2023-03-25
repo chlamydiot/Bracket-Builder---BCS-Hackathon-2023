@@ -15,16 +15,16 @@ return <div className="RightPanel">
          <div className='PresetPanel'>
             <p> Preset Panels </p>
             <button onClick={() => changePreset(1)}>
-               Top Songs of 2020
+               Top Songs of 2019
             </button>
             <button onClick={() => changePreset(2)}>
-               Preset Bracket 2
+               Top Songs of 2020
             </button>
             <button onClick={() => changePreset(3)}>
-               Preset Bracket 3
+               Top Songs of 2021
             </button>
             <button onclick={() => changePreset(4)}>
-               Preset Bracket 4
+               Top Songs of 2022
             </button>
          </div>
         </div>
