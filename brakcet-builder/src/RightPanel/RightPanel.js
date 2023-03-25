@@ -1,7 +1,9 @@
 function RightPanel() {
 return <div className="RightPanel">
          <div className='CreatePanel'> 
-            internal
+            <button>
+               Create New Bracket
+            </button>
          </div>
          <div className='PresetPanel'>
             <button>
