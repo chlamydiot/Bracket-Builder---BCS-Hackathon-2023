@@ -7,7 +7,7 @@ var round2;
 var round3;
 var winner;
 
-const rounds = [
+const initialRounds = [
   {
     title: 'Round one',
     seeds: [
@@ -71,6 +71,9 @@ const rounds = [
 ];
 
 function BracketLeftPanel({input}) {
+  const [matchNum, setMatchNum] = useState(0)
+  const [roundNum, setRoundNum] = useState(1)
+
   var currentRound = input;
   var nextRound = [];
   let r = 0;
@@ -78,23 +81,33 @@ function BracketLeftPanel({input}) {
   
   const generateBracket = (input) => {
     for (let i = 0; i < 8; i += 2) {
-      rounds[0]["seeds"][i/2]["teams"][0]["name"] = input[i];
-      rounds[0]["seeds"][i/2]["teams"][1]["name"] = input[i+1];
+      initialRounds[0]["seeds"][i/2]["teams"][0]["name"] = input[i];
+      initialRounds[0]["seeds"][i/2]["teams"][1]["name"] = input[i+1];
     }
     console.log("Bracket would be generated here.");
   }
 
   const updateBracket = (currentRound, j) => {
-    rounds[1]["seeds"][r]["teams"][j%2]["name"] = currentRound[j];
+    console.log("match Num" + matchNum)
+    console.log("round Num" + roundNum)
+    let newRounds = [...round]
+    newRounds[roundNum]["seeds"][Math.trunc(matchNum / 2)]["teams"][matchNum % 2]["name"] = input[matchNum * 2 + j];
+    if (matchNum >= 3) {
+      setRoundNum(2)
+      setMatchNum(0)
+    }
+    setRound(newRounds)
+    setMatchNum(matchNum + 1)
   }
 
   generateBracket(input);
+  const [round, setRound] = useState(initialRounds)
 
     return <div className="LeftPanel">
       <h1>SONGS PANEL</h1>
-      <Bracket rounds={rounds} />
-      <button onClick={() => updateBracket(currentRound, j)}>{currentRound[j]}</button>
-      <button onClick={() => updateBracket(currentRound, j+1)}>{currentRound[j+1]}</button>
+      <Bracket rounds={round} />
+      <button onClick={() => updateBracket(currentRound, 0)}>{currentRound[j]}</button>
+      <button onClick={() => updateBracket(currentRound, 1)}>{currentRound[j+1]}</button>
     </div>
 
 }
