@@ -22,6 +22,24 @@ function MainPanels() {
   "Need to Know - Doja Cat",
   "Woman - Doja Cat",
   "Running Up That Hill - Kate Bush"]
+    const topSongs2021 = ["Levitating - Dua Lipa",
+    "Save Your Tears - The Weeknd",
+    "Blinding Lights - The Weeknd",
+    "Mood - 24kGoldn",
+    "Good 4 U - Olivia Rodrigo",
+    "Kiss Me More - Doja Cat",
+    "Leave the Door Open - Silk Sonic",
+    "Drivers License - Olivia Rodrigo"
+    ]
+    const topSongs2020 = ["Circles - Post Malone",
+    "The Box - Roddy Ricch",
+    "Don't Start Now - Dua Lipa",
+    "Rockstar - DaBaby",
+    "Adore You - Harry Styles",
+    "Life is Good - Future",
+    "Memories - Maroon 5",
+    "The Bones - Maren Morris"
+  ]
 
   let pageContent = null;
   if (preset === 0) {
@@ -34,6 +52,18 @@ function MainPanels() {
     console.log("Preset 1 block executed")
     pageContent = <>
       <BracketLeftPanel input={topSongs2022} />
+      <BracketRightPanel />
+    </>
+  } else if (preset === 2) {
+    console.log("Preset 2 block executed")
+    pageContent = <>
+      <BracketLeftPanel input={topSongs2021} />
+      <BracketRightPanel />
+    </>
+  } else if (preset === 3) {
+    console.log("Preset 3 block executed")
+    pageContent = <>
+      <BracketLeftPanel input={topSongs2020} />
       <BracketRightPanel />
     </>
   }

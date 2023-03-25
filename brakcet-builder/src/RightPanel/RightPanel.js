@@ -20,10 +20,10 @@ return <div className="RightPanel">
             <button onClick={() => changePreset(2)}>
                Preset Bracket 2
             </button>
-            <button onClick="">
+            <button onClick={() => changePreset(3)}>
                Preset Bracket 3
             </button>
-            <button onclick="">
+            <button onclick={() => changePreset(4)}>
                Preset Bracket 4
             </button>
          </div>
