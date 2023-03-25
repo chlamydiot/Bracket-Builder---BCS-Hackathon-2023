@@ -1,9 +1,9 @@
 
 import MainPanels from "../RacketPage/RacketPage";
 
-function RightPanel({setPreset}) {
+function RightPanel({changePreset}) {
   const setSongsBracket = () => {
-    setPreset(1)
+    // setPreset(1)
   }
 
 return <div className="RightPanel">
@@ -13,14 +13,14 @@ return <div className="RightPanel">
             </button>
          </div>
          <div className='PresetPanel'>
-            <p className='PresetTitle'> Preset Brackets </p>
-            <button onclick={setSongsBracket}>
+            <p> Preset Panels </p>
+            <button onClick={() => changePreset(1)}>
                Top Songs of 2020
             </button>
-            <button onclick="">
+            <button onClick={() => changePreset(2)}>
                Preset Bracket 2
             </button>
-            <button onclick="">
+            <button onClick="">
                Preset Bracket 3
             </button>
             <button onclick="">

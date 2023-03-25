@@ -1,37 +1,43 @@
 import { useState } from "react"
+import { Bracket, RoundProps } from 'react-brackets';
 
-function LeftPanel({input}) {
-  const [name, setName] = useState('')
-  const [textArea, setTextArea] = useState('')
+const rounds = [
+  {
+    title: 'Round one',
+    seeds: [
+      {
+        id: 1,
+        date: new Date().toDateString(),
+        teams: [{ name: 'Team A' }, { name: 'Team B' }],
+      },
+      {
+        id: 2,
+        date: new Date().toDateString(),
+        teams: [{ name: 'Team C' }, { name: 'Team D' }],
+      },
+    ],
+  },
+  {
+    title: 'Round one',
+    seeds: [
+      {
+        id: 3,
+        date: new Date().toDateString(),
+        teams: [{ name: 'Team A' }, { name: 'Team C' }],
+      },
+    ],
+  },
+];
 
+function BracketLeftPanel({input}) {
   const generateBracket = () => {
     console.log("Bracket would be generated here.");
   }
 
     return <div className="LeftPanel">
-      <h1>Enter form details here:</h1>
-      <div className="FormContainer">
-        <form onSubmit={generateBracket}>
-          <div>
-            <label>
-              Name:
-              <input type="text" value={name} onChange={({target}) => setName(target.value)}></input>
-            </label>
-          </div>
-          <div>
-            <label>
-              Input teams:
-              <textarea 
-                value={textArea} 
-                onChange={({target}) => setTextArea(target.value)
-                }>
-                Separate teams by newlines
-              </textarea>
-            </label>
-          </div>
-        </form>
-      </div>
+      <h1>SONGS PANEL</h1>
+      <Bracket rounds={rounds} />
     </div>
 }
 
-export default LeftPanel;
+export default BracketLeftPanel;
